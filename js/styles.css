@@ -1,0 +1,98 @@
+html {
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
+
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.accordion {
+	border-radius: 10px;
+	border: 1px solid #333;
+	padding: 12px;
+}
+
+.accordion ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.accordion li {
+	border: 1px solid #333;
+	margin-bottom: 3px;
+}
+
+.accordion li:last-child {
+	margin-bottom: 0;
+}
+
+.menu-input {
+	display: none;
+}
+
+.menu-label {
+	background-color: #D95B44;
+	color: #532120;	
+	font-size: 1.4rem;
+	font-weight: bold;
+	display: block;
+	padding: 6px;
+	cursor: pointer;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;	
+}
+
+.menu-input:checked + .menu-label {
+	background-color: #BF2942;
+	color: #fff;
+}
+
+.menu-input:checked + .menu-label:hover {
+	background-color: #a22035;
+}
+
+.menu-input + .menu-label:hover {
+	background-color: #ce5943;
+}
+
+.menu-body {
+	overflow: hidden;
+	display: none;
+	padding: 12px;
+	border-top: 1px solid #333;
+    transition:all 0.3s ease-out;
+}
+.menu-input:checked ~ .menu-body {
+	display: block;
+}
+
+.menu-body-title {
+	color: #51383C;
+	margin: 0 0 8px 0;
+}
+
+.menu-body-category {
+	margin: 0 0 8px 0;
+	display: block;
+}
+
+.menu-option {
+	margin: 0;
+	line-height: 1.5em;
+}
+
+/*
+@media screen and (max-width: 471px) {
+	.button {
+	    margin-right: 5px;
+    	margin-bottom: 5px;
+	}
+}
+*/
