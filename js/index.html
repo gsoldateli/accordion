@@ -10,15 +10,16 @@
 
 	<div class="container">
 		<h1>
-			Accordion
+			Accordion JS Version
 		</h1>
-		<div class="accordion">
+
+		<h3>Accordion #1</h3>
+		<div id="ac1" class="accordion">
 		  <ul>
 
 		    <!-- Item 1 -->
 		    <li class="menu-item">
-		    	<input id="appetizers-menu" class="menu-input" type="checkbox" checked="">
-		    	<label for="appetizers-menu" class="menu-label">Appetizers</label>
+		    	<h3 class="menu-label">Appetizers</h3>
 		    	<div class="menu-body">
 		    		<h3 class="menu-body-title">Check our tasty apps!</h3>
 		    		<strong class="menu-body-category">Happy hour menu - half off!!</strong>
@@ -27,39 +28,26 @@
 		    		<p class="menu-option">Garlic breaded pickles - 4.59$</p>
 		    	</div>
 		    </li>
-
-		    <!-- Item 2 -->
-		    <li class="menu-item">
-		    	<input id="entrees-menu" class="menu-input" type="checkbox">
-		    	<label for="entrees-menu" class="menu-label">Entrees</label>
-		    	<div class="menu-body">
-		    		<h3 class="menu-body-title">Choose from a wide range of pastas, combos and signature dishes</h3>
-		    		<strong class="menu-body-category">Pastas</strong>
-		    		<p class="menu-option">Chicken Picatta - 14.99$</p>
-		    		<p class="menu-option">Chicken Pollo - 12.99$</p>
-		    		<p class="menu-option">Lasagna (Chicken/Beef) - 10.99$</p>
-
-		    		<strong class="menu-body-category">Combos</strong>
-		    		<p class="menu-option">Italian Sausage & Beef Combo - 15.99$</p>
-		    		<p class="menu-option">Mac n Cheese with Chicken Tenders - 8.99$</p>		    		
-		    	</div>
-		    </li>
-
-		    <!-- Item 3 -->
-		    <li class="menu-item">
-		    	<input id="desserts-menu" class="menu-input" type="checkbox">
-		    	<label for="desserts-menu" class="menu-label">Desserts</label>
-		    	<div class="menu-body">
-		    		<h3 class="menu-body-title">New Summer specials!!</h3>
-		    		<strong class="menu-body-category">Shakes and Ice Creams!!</strong>
-		    		<p class="menu-option">Turtle Caramel Shake - 6.99$</p>
-		    		<p class="menu-option">Chocolate Brownie - 4.99$</p>
-		    	</div>
-		    </li>
-
-		    <!-- Placeholder for Item 4 -->
-
 		  </ul>
 	</div>
+	<h3>Accordion #2</h3>
+	<div id="ac2" class="accordion secondary">
+	  <ul>
+
+	    <!-- Item 1 -->
+	    <li class="menu-item">
+	    	<h3 class="menu-label">Appetizers</h3>
+	    	<div class="menu-body">
+	    		<h3 class="menu-body-title">Check our tasty apps!</h3>
+	    		<strong class="menu-body-category">Happy hour menu - half off!!</strong>
+	    		<p class="menu-option">Chicken Wings (6) - 5.99$</p>
+	    		<p class="menu-option">Calamari - 7.99$</p>
+	    		<p class="menu-option">Garlic breaded pickles - 4.59$</p>
+	    	</div>
+	    </li>
+	  </ul>
+	</div>
+
+	<script src="accordion.js"></script>
 </body>
 </html>

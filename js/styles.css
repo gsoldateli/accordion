@@ -42,35 +42,38 @@ html {
 	display: block;
 	padding: 6px;
 	cursor: pointer;
-
+	margin: 0;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     -o-transition: all 300ms;
     transition: all 300ms;	
 }
 
-.menu-input:checked + .menu-label {
+.menu-label:hover {
+	background-color: #ce5943;
+}
+
+.menu-label.active {
 	background-color: #BF2942;
 	color: #fff;
 }
 
-.menu-input:checked + .menu-label:hover {
+.menu-label.active:hover {
 	background-color: #a22035;
 }
 
-.menu-input + .menu-label:hover {
-	background-color: #ce5943;
-}
+
 
 .menu-body {
 	overflow: hidden;
-	display: none;
-	padding: 12px;
+	display: block;
+	height: 0;
+	padding: 0 12px;
 	border-top: 1px solid #333;
     transition:all 0.3s ease-out;
 }
-.menu-input:checked ~ .menu-body {
-	display: block;
+.menu-label.active ~ .menu-body {
+	padding: 12px;
 }
 
 .menu-body-title {
