@@ -27,15 +27,17 @@
 		accordion._toggleActive = function(item) {
 			var bodyEl = item.nextElementSibling;
 			//If item title is not active
-			if (item.className.indexOf(' active ') === -1) {
+			if (item.className.indexOf('active') === -1) {
 				//Activate it
-				item.className += ' active ';
+				//item.className += ' active ';
+				item.classList.add('active');
 
 				bodyEl.style.height = (this._innerHeight(bodyEl)*1.1)+'px';
 			}
 			else {
 				//Desactivate it
-				item.className = item.className.replace(/ active /g,'');	
+				//item.className = item.className.replace(/ active /g,'');	
+				item.classList.remove('active');
 				bodyEl.style.height = 0;
 			}
 
@@ -47,10 +49,8 @@
 			height = 0;
 			var innerElements = el.querySelectorAll('*');
 			for(var i = 0; i< innerElements.length; i++ ) {
-				console.log(innerElements[i]);
 				height += innerElements[i].clientHeight;
 			}
-			console.log(height);
 
 			return height;
 		};
