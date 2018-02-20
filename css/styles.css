@@ -71,6 +71,7 @@ html {
 }
 .menu-input:checked ~ .menu-body {
 	display: block;
+
 }
 
 .menu-body-title {
